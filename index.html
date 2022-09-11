@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>JonnyMation Portafolio</title>
+          <!-- CSS only  es importante que nuestro css quede al final, para sobreescribir los estilos de boostrap-->
+          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--aos aniamte -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+          
+          <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+          <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"/>
+          <link rel="stylesheet" href="css/style.css">
+      </head>
+      <body>
+          <!-- Inicio -->
+            <header>
+          <!-- barra de navegación -->
+                <nav class="navbar fixed-top navbar-expand-lg bg-portafolio">
+                    <div class="container"> <!--antes container-fluid. Si agrego un div de calse row me rompe la estrcutura y para eso debo reconfigrar su width... PREGUNTAR-->                      
+                          <div id="logo"> 
+                              <a class="navbar-brand" href="#hero">JonnyMation</a> <!--para responsive-->
+                          </div> 
+            <!-- menú responsive -->            
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                          </button>
+
+            <!-- enlaces internos-->  
+                          <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!-- nuevo: justify-content-end-->
+                                <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#hero">Inicio</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#habilidad">Habilidades</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#estudios">Estudios</a>
+                                  </li>                                 
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#perfil">Perfil profesional</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#portafolio">Portafolio</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#contacto">Contacto</a>
+                                  </li>
+
+                                </ul>
+                          </div>        
+                    </div>
+                </nav>
+          <!-- inicio o hero-->  
+                <section id="hero">
+                    <div class="container">
+                        <div class="row">
+
+               
+
+                          
+                            <div data-aos="zoom-out" class="welcome col-md-6" data-aos-duration="2000"> <!-- data aos es la "clase de aos" para llamar el efecto y data aos duration genera el tiempo de la animación-->  
+                                
+                              <article>
+                                <h3>Hola,</h3> 
+                                <h1>Soy Jonnathan<br> 
+                                    Jiménez<br>
+                                  <b>Desarrollador<br>
+                                    front-end</b></h1>
+                              </article>
+                            </div>
+                            <div class="welcomeimg col-md-6" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="400">
+                              <img src="img/fotoPerfil.png" alt="Foto de perfil Jonnathan Jiménez">
+                          </div>
+                   
+
+                        </div>
+   
+                    </div>
+                </section> 
+            </header>
+
+
+          <!-- Secciones -->
+            <main>
+              <div id="habilidad">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              
+              <section  class="habilidades">
+                <div class="container">
+                      <div class="row">
+
+                              <div id="carouselAbbilitiesControls" class="carousel slide" data-bs-ride="carousel">
+                                  <div class="carousel-inner col-md-6">
+                                        <div class="carousel-item active">
+                                            <div class="habilidadFig">                                             
+
+                                              <h3>80 %</h3>                                            
+                                              <h2>Creativo</h2>
+
+                                            </div>
+                                            <div class="habilidadFig">
+
+                                              <h3>85 %</h3>                                            
+                                              <h2>Resolutivo</h2>
+                                              
+                                            </div>
+                                            <div class="habilidadFig">
+
+                                              <h3>90 %</h3>                                            
+                                              <h2>Responsable</h2>
+                                              
+                                            </div>
+                                            <div class="habilidadFig">
+
+                                              <h3>70 %</h3>                                            
+                                              <h2>Trabajo en equipo</h2>
+                                              
+                                            </div>                                         
+                                          
+                                        </div>
+                                        <div class="carousel-item">
+                                          <div class="habilidadFig">                                             
+
+                                            <h3>90 %</h3>                                            
+                                            <h2>html</h2>
+
+                                          </div>
+                                          <div class="habilidadFig">
+
+                                            <h3>75 %</h3>                                            
+                                            <h2>css</h2>
+                                            
+                                          </div>
+                                          <div class="habilidadFig">
+
+                                            <h3>40 %</h3>                                            
+                                            <h2>js</h2>
+                                            
+                                          </div>
+                                          <div class="habilidadFig">
+
+                                            <h3>40 %</h3>                                            
+                                            <h2>php</h2>
+                                            
+                                          </div>
+
+                                        
+                                        </div>
+                                        
+           
+                                  </div>
+                                  <button class="carousel-control-prev izquierda" type="button" data-bs-target="#carouselAbbilitiesControls" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                   
+                                  </button>
+                                  <button class="carousel-control-next derecha" type="button" data-bs-target="#carouselAbbilitiesControls" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      
+                                  </button>
+                              </div>
+
+
+
+                
+                                
+                          </div>
+                      </div>
+                </div>
+            </section>
+            </div>
+
+              <section id="estudios">
+                    <div class="container">
+                      <h2>Estudios</h2>
+                      <div class="row">
+                          <div data-slick='{"slidesToShow": 3, "slidesToScroll": 1}' class="estudioContent col-md-12">
+                           
+                              <div class="card card-body miTarjeta col-md-3">                                  
+                                    <article>
+                                    <i class='bx bxs-graduation'></i>
+                                    <h3 class="card-title">Tecnólogo ADSI</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">SENA</h4>
+                                    <p class="card-text">En formación</p>
+                                  </article>                                     
+                                
+                              </div>
+
+                              <div class="card card-body miTarjeta col-md-3">                                  
+                                <article>
+                                <i class='bx bxs-graduation'></i>
+                                <h3 class="card-title">Tecnólogo A/V y Multimedia</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">Universidad de Bogotá Jorge Tadeo Lozado</h4>
+                                <p class="card-text">Culminado, 2013</p>
+                              </article>
+                                   
+                            
+                          </div>
+
+                            <div class="card card-body miTarjeta col-md-3">
+                                  
+                                    <article>
+                                    <i class='bx bxs-graduation'></i>
+                                    <h3 class="card-title">Bootcamp de empremdimiento</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted">Universidad del Rosario</h4>
+                                    <p class="card-text">Culminado, 2019</p>
+                                  </article>
+                                       
+                                
+                              </div>
+
+                              <div class="card card-body miTarjeta col-md-3">
+                                  
+                                <article>
+                                <i class='bx bxs-graduation'></i>
+                                <h3 class="card-title">Bachiller académico</h3>
+                                <h4 class="card-subtitle mb-2 text-muted">Gimnasio William Mackinley</h4>
+                                <p class="card-text">Culminado, 2008</p>
+                              </article>
+                                   
+                            
+                          </div>
+                              
+                                
+                        </div> 
+                      </div>          
+                    </div>
+              </section>
+
+
+
+              <section id="perfil">
+                    <div class="container">
+                      
+                      <div class="row">
+                        <div class="miImagen col-md-6">
+                         <img src="img/imagen.png" alt="imagen perfil profesional">
+                
+                        </div>
+                          <div class="miTexto col-md-6">
+                            <article>
+                              
+                            <h5>Acerca de mí</h5>
+                            <h2>Perfil</h2>
+                            <h2>Profesional</h2>
+                          
+                            <p>Soy un diseñador multimedia que busca ampliar sus horizontes profesionales en el medio digital.
+                              <br>
+                              <br>
+                              Poseo conocimientos en  producción de piezas multimedia interactivas y me proyecto como un diseñador front-end que busca fortalcer conocimientos y habilidades en el  mundo de la programación, uniendo saberes y experiencias en storytelling y nuevos medios.</p>
+                            </article>
+
+                            <div class="row">
+                              <div class="miExperiencia col-md-6">
+                                
+                                <i class='bx bxs-award'></i>
+                                <article>
+                                <h4>Diseñador multimedia</h4>
+                                <p>Donar Cortes Agencia, 2013-2014</p>
+                              </article>
+                              </div>
+
+                              <div class="miExperiencia col-md-6">
+                                
+                                <i class='bx bxs-award'></i>
+                                <article>
+                                <h4>Diseñador instruccional</h4>
+                                <p>Tech Colombia, 2022-presente</p>
+                              </article>
+                              </div>
+
+                              <div class="miExperiencia col-md-6">
+                                
+                                <i class='bx bxs-award'></i>
+                                <article>
+                                <h4>Colaborador digital</h4>
+                                <p>Fundación Social Perea, 2019-presente</p>
+                              </article>
+                              </div>
+
+                              <div class="miExperiencia col-md-6">
+                                
+                                <i class='bx bxs-award'></i>
+                                <article>
+                                <h4>Tallerista</h4>
+                                <p>Es Cultural Local, 2020</p>
+                              </article>
+                              </div>
+    
+                              </div>
+
+                  
+                          </div>
+                          
+                          
+
+                        
+                      </div>
+                    </div>
+
+              </section>
+
+
+              <section id="portafolio">
+                    <div class="container">
+                      <h2>Portafolio</h2>
+                      <p>A continuación puede encontrar mis proyectos destacados</p>
+                      <div class="row">
+                        <div data-slick='{"slidesToShow": 2, "slidesToScroll": 1}' class="estudioContent col-md-12">
+                          <div class="card miTarjeta col-md-4">
+                            <div class="card-body">
+                              <article>
+                              <img src="img/figuras_03.png" class="card-img-top" alt="Ejercicio de figuras">
+                              
+                                
+                              <a target="_blank" href="https://jpjimenez133.github.io/geometrico/" class="card-title btn btn-primary botones">Figuras con JS</a>
+                                <p class="card-text">Proyecto exploratorio de animaciones y trnasiciones en css+js</p>
+                                
+                              </article>
+                              </div>
+                            </div>
+
+                            <div class="card miTarjeta col-md-4">
+                              <div class="card-body">
+                                <article>
+                                <img src="img/algoritmos_03.png" class="card-img-top" alt="Ejercicio de algoritmos">
+                                
+                                  
+                                <a target="_blank" href="https://jpjimenez133.github.io/algoritmos_js/" class="card-title btn btn-primary botones">Algoritmos</a>
+                                  <p class="card-text">Algoritmos que generan varias operaciones a través de js</p>
+                                  
+                                </article>
+                                </div>
+                              </div>
+
+                              <div class="card miTarjeta col-md-4">
+                                <div class="card-body">
+                                  <article>
+                                  <img src="img/avatar_03.png" class="card-img-top" alt="Ejercicio de algoritmos">
+                                  
+                                    
+                                  <a target="_blank" href="https://jpjimenez133.github.io/geometrico/datos-avatar.html" class="card-title btn btn-primary botones">Avatar</a>
+                                    <p class="card-text">Avatar que captura datos con js</p>
+                                    
+                                  </article>
+                                  </div>                                                        
+                          
+                          </div>
+                      </div>
+                    </div>
+              </section>
+
+              <section id="contacto">
+                <div class="container">
+                  <div class="row">
+
+                    <span>
+                      <h2>Contacto</h2>
+                    </span>
+                    <span>
+                      <p>En esta sección puede compartir sus inquietudes o solicitudes, <br>con gusto las atenderé:</p>
+                    </span>
+                    
+                     
+                    <div class="basic-form formulario col-md-8">
+                      <form action="" method="POST">
+                          <div class="row">                                
+                                    <div class="form-group col-md-6">
+                                      <label class="form-label">Nombres</label>
+                                      <input type="text" class="form-control" required name="nombresc" id="nombresC" aria-describedby="emailHelp">
+                                      <!-- <div class="form-text">Ingrese sus nombres completos</div> -->
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                      <label class="form-label">Apellidos</label>
+                                      <input type="text" class="form-control" required name="apellidosc" id="apellidosC" aria-describedby="emailHelp">
+                                      <!-- <div class="form-text">Ingrese sus nombres completos</div> -->
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                      <label class="form-label">Correo electronico</label>
+                                      <input type="email" class="form-control" required name="email" id="emailC" aria-describedby="emailHelp">
+                                      <!-- <div id="emailHelp" class="form-text">Ingrese su correo electonico</div> -->
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                      <label class="form-label">Tipo de solicitud</label>
+                                      <select class="form-select" required name="tipoconsc" aria-label="Default select example">
+                                        <option>Seleccione...</option>
+                                        <option value="consulta">Consulta general</option>
+                                        <option value="empleo">Oferta de empleo</option>
+                                        <option value="felicitacion">Felicitacion</option>
+                                        <option value="sugerencia">Sugerencia</option>
+                                        <option value="otro">Otro</option>
+                                      </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                      <label class="form-label">Descripcion</label>
+                                      <textarea class="form-control" required name="descripcion" rows="3"></textarea>
+                                    </div>
+
+              
+
+                                    <button type="submit" class="btn btn-primary botones">Enviar</button>
+                          </div>
+                          
+                      </form>
+                    </div>
+                    
+                    <div class="datosContacto col-md-4">                                    
+                      <article>
+                        <div class="cardC1 col-md-12">
+                        
+                          <h3>Jonnathan <br>Jiménez</h3>
+                          <p>Desarrollador front-end</p>
+                          <h3>Email</h3>
+                          <p>jpjimenez133@misena.edu.co</p>                      
+                        
+                        </div>
+                      </article>
+                      <article>
+                      
+                        <div class="cardC2 col-md-12">
+                          
+                            <h3>Contáctame</h3>
+                            <p>+57 301 569 4471</p>
+                           
+                           
+                            <h3>Redes</h3>
+
+                            <a target="_blank" href="https://jpjimenez133.github.io/">                        
+                              <i class="bi bi-github"></i>    
+                            </a>                      
+                            <a target="_blank" href="https://co.linkedin.com/in/jonnathan-jimenez">
+                            <i class="bi bi-linkedin"></i>
+                          </a>
+
+                        
+                        </div>
+                      </article>
+                  </div>                 
+                      
+                  </div>                   
+                </div>
+              </section>
+
+
+            </main>
+
+
+
+
+            <footer>
+                  <div class="container">
+                    <div class="row">
+                        <div class="pie col-md-12">
+                          <p>JonnyMation ©</p>
+                        </div>
+                    </div>
+              </div>
+
+
+            </footer>  
+
+          <!-- JavaScript Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- Aos animate -->
+          <script> AOS.init(); </script> <!-- Aos animate -->          
+          <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+         <script> $(document).ready(function(){
+            $('.estudioContent').slick({
+            dots: true,
+            
+            
+            centerPadding: '100px',
+            
+            
+           
+  
+          });   
+          });    
+          </script>
+          <!-- <script type="text/javascript" src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>-->  
+
+          <script href="js/function.js"></script>
+      </body>
+</html>
